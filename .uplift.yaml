@@ -1,0 +1,10 @@
+bumps:
+  - file: build.gradle.kts
+    regex:
+      - pattern: 'version = "$VERSION"'
+        semver: true
+
+  - file: README.md
+    regex:
+      - pattern: 'implementation\("com.hoseus:lib-error:$VERSION"\)'
+        semver: true
